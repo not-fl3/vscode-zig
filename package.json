@@ -45,6 +45,7 @@
                     "type": "string",
                     "default": "build",
                     "enum": [
+                        "none",
                         "build",
                         "build-exe",
                         "build-lib",

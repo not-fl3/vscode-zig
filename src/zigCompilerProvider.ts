@@ -44,6 +44,8 @@ export default class ZigCompilerProvider implements vscode.CodeActionProvider {
                 processArg.push("--build-file");
                 processArg.push(buildFilePath.replace("${workspaceFolder}", vscode.workspace.rootPath));
                 break;
+            case "none":
+                return;
             default:
                 processArg.push(textDocument.fileName);
                 break;
